@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Chrome Extension Example",
-    "description": "The most popular movies and TV shows in your   default tab. Includes ratings, summaries and the ability to watch trailers.",
+    "name": "Sneak Peek",
+    "description": "A preview screenshot of each of the pages  appearing on a google search page",
     "version": "1",
-    "author": "Gavin Macpherson",
+    "author": "Gavin Macpherson, Rudyahly Tossel",
     "browser_action": {
         "default_title": "Have a good day"
     },
@@ -19,7 +19,7 @@
             "https://www.google.com/search*"
           ],
           "html": ["googlesearch.html"],
-          "js": ["main.js", "node_modules/rasterizehtml/dist/rasterizeHTML.allinone.js"]
+          "js": ["main.js"]
         }
       ]
   }
