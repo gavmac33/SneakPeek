@@ -5,7 +5,6 @@
     "version": "1",
     "author": "Gavin Macpherson",
     "browser_action": {
-        "default_icon": "deschutes.png",
         "default_title": "Have a good day"
     },
     "chrome_url_overrides": {
