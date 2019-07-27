@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "Chrome Extension Example",
+    "description": "The most popular movies and TV shows in your   default tab. Includes ratings, summaries and the ability to watch trailers.",
+    "version": "1",
+    "author": "Gavin Macpherson",
+    "browser_action": {
+        "default_icon": "deschutes.png",
+        "default_title": "Have a good day"
+    },
+    "chrome_url_overrides": {
+        "newtab": "newtab.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.google.com/search*"
+          ],
+          "html": ["googlesearch.html"],
+          "js": ["main.js", "node_modules/rasterizehtml/dist/rasterizeHTML.allinone.js"]
+        }
+      ]
+  }
